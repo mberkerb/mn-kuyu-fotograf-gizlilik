@@ -99,7 +99,8 @@ Silme talepleri aşağıdaki bölümde açıklandığı şekilde karşılanır.
 ## 6. Haklarınız
 
 Kayıtlarınızın silinmesini veya bir kopyasını talep etmek için
-**mberkerb@gmail.com** adresine yazabilirsiniz.
+[Mavi Nokta iletişim sayfası](https://mavinokta.com.tr/iletisim) üzerinden
+bizimle iletişime geçebilirsiniz.
 
 Talebinizi işleyebilmemiz için uygulamanın **Ayarlar** ekranında görünen
 **kurulum kimliğini** bildirmeniz gerekir; kayıtlar bu numarayla
