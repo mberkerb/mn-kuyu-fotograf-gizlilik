@@ -1,6 +1,6 @@
 # MN Kuyu Fotoğraf — Gizlilik Politikası
 
-**Yürürlük tarihi:** 19 Ağustos 2026
+**Yürürlük tarihi:** 16 Eylül 2026
 **Uygulama:** MN Kuyu Fotoğraf (`com.mnkuyufotograf.app`)
 **Veri sorumlusu:** Mavi Nokta Su Mühendisliği
 **İletişim:** mberkerb@gmail.com
@@ -8,8 +8,8 @@
 ## 1. Bu uygulama ne yapar
 
 MN Kuyu Fotoğraf, saha personelinin su kuyularını fotoğraflayıp konumlarını
-belgelemesi için geliştirilmiş kurumsal bir araçtır. Kamuya açık bir tüketici
-uygulaması değildir ve yalnızca davet edilen kullanıcılara dağıtılır.
+belgelemesi için geliştirilmiş kurumsal bir araçtır. Uygulama Google Play
+üzerinden dağıtılabilir; kullanım amacı saha çalışmalarının belgelenmesidir.
 
 ## 2. Topladığımız veriler
 
@@ -46,7 +46,12 @@ fotoğraflara erişilmez**; yalnızca uygulama içinde çekilen kareler işlenir
 - **İsim (isteğe bağlı):** İlk açılışta isim girmeniz istenir, atlayabilirsiniz.
   İsim girilirse kurulum kimliğiyle ilişkilendirilerek saklanır.
 
-### 2.4 Toplamadıklarımız
+### 2.4 Cihaz bilgileri
+
+Cihazın marka ve model bilgileri, kurulum profili ve fotoğraf üst veri
+kayıtlarıyla birlikte Google Cloud Firestore'a gönderilir ve saklanır.
+
+### 2.5 Toplamadıklarımız
 
 Reklam kimliği, kişi listesi, çağrı kaydı, mikrofon kaydı, cihaz galerisi,
 tarayıcı geçmişi, sağlık verisi ve ödeme bilgisi **toplanmaz**. Uygulamada
@@ -69,8 +74,11 @@ veya reklam amacıyla üçüncü taraflara satılmaz, kiralanmaz veya devredilme
 ## 4. Erişim ve güvenlik
 
 Buluttaki kayıtlara yalnızca kaydı oluşturan anonim oturum sahibi yazabilir.
-Uygulama içinden bulut verisi okunamaz, listelenemez ve silinemez; bu kısıtlar
-sunucu tarafı güvenlik kurallarıyla zorunlu kılınmıştır.
+Buluttaki fotoğraf dosyaları uygulama içinden okunamaz, listelenemez ve
+silinemez. Uygulama, yalnızca kendi anonim oturumuna ait profil ve fotoğraf
+üst veri kayıtlarını okuyabilir; bu kayıtların toplu listelenmesi ve
+uygulamadan silinmesi kapalıdır. Bu kısıtlar sunucu tarafı güvenlik
+kurallarıyla zorunlu kılınmıştır.
 
 Yönetici erişimi Mavi Nokta Su Mühendisliği'nin Firebase konsolu üzerinden
 yapılır ve şirket personeliyle sınırlıdır.
